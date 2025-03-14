@@ -10,28 +10,30 @@ This is an example of an application that uses Go and Deckrun to build and deplo
 
 ## Deploy the Application
 
-1. Clone this repository:
+### 1. Clone this repository
 
 ```bash
 git clone git@github.com:deckrun/go-getting-started.git
 ```
 
-2. Change into the project directory:
+### 2. Change into the project directory
 
 ```bash
 cd go-getting-started
 ```
 
-3. Create a New App on Deckrun:
+### 3. Create a New App on Deckrun
 
 ```bash
 deck init
 ```
 
-4. Deploy the application:
+### 4. Deploy the application
 
 ```bash
 deck deploy
 ```
 
-5. Open the application in your browser using the URL provided in the output of the `deck deploy` command.
+### 5. Open the application in your browser
+
+Use the URL provided in the output of the `deck deploy` command
