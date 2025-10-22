@@ -10,12 +10,12 @@ import (
 func main() {
 	http.Handle("/", loggingMiddleware(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		w.WriteHeader(http.StatusOK)
-		fmt.Fprint(w, "Hello World")
+		fmt.Fprintln(w, "Hello World!")
 	})))
 
 	http.Handle("/healthz", loggingMiddleware(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		w.WriteHeader(http.StatusOK)
-		fmt.Fprint(w, "ok")
+		fmt.Fprintln(w, "ok")
 	})))
 
 	log.Fatal(http.ListenAndServe(":8080", nil))
